@@ -1,4 +1,5 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { BrowserRouter as Router } from 'react-router-dom';
+import { Route, Routes } from 'react-router'
 // Components
 import Widget from './ChampselectInlineWidget/ChampselectInlineWidget';
 import IntegrateWithCampminder from './Component/IntegrateWithCampminder/IntegrateWithCampminder';
