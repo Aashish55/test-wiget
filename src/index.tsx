@@ -3,19 +3,19 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Widget from './ChampselectInlineWidget/ChampselectInlineWidget';
+// import Widget from './ChampselectInlineWidget/ChampselectInlineWidget';
 
-const champselectInlineWidget = document.getElementById('champselect-inline-widget')
+// const champselectInlineWidget = document.getElementById('champselect-inline-widget')
 const root = document.getElementById('root')
 
-if (champselectInlineWidget) {
-  ReactDOM.render(
-    <React.StrictMode>
-      <Widget appName={champselectInlineWidget?.getAttribute('data-slug') || ''} />
-    </React.StrictMode>,
-    champselectInlineWidget
-  );
-}
+// if (champselectInlineWidget) {
+//   ReactDOM.render(
+//     <React.StrictMode>
+//       <Widget appName={champselectInlineWidget?.getAttribute('data-slug') || ''} />
+//     </React.StrictMode>,
+//     champselectInlineWidget
+//   );
+// }
 
 ReactDOM.render(
   <React.StrictMode>

@@ -27,7 +27,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "build:widget": "react-scripts build && parcel build src/index.tsx --public-url https://test-widget123.netlify.app/widget --no-source-maps -d build/widget && cp build/static/css/*.css build/widget/index.css && cp build/static/css/*.css.map build/widget/index.css.map"
+    "build:widget": "react-scripts build && parcel build src/widget.tsx --public-url https://test-widget123.netlify.app/widget --no-source-maps -d build/widget && cp build/static/css/*.css build/widget/index.css && cp build/static/css/*.css.map build/widget/index.css.map"
   },
   "eslintConfig": {
     "extends": [

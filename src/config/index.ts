@@ -7,7 +7,7 @@ if (!process.env.REACT_APP_ENV!) {
 const config = {
   appUrl: process.env.REACT_APP_ENV.includes('development')
     ? 'http://localhost:3000'
-    : 'https://test-widget123.netlify.app/',
+    : 'https://test-widget123.netlify.app',
 }
 
 export { config }
