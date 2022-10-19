@@ -1,0 +1,105 @@
+.sharpspringLoginPage {
+  height: 100vh;
+  font-family: "Lucida Grande";
+
+  .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    box-sizing: border-box;
+    background-color: #eff0f1;
+
+    .mainArea {
+      height: 500px;
+      width: 600px;
+      border: 1px solid rgba(211, 211, 211, 0.786);
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 4px;
+      padding: 30px;
+      box-sizing: border-box;
+
+      .logoArea {
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .logo {
+          height: 60px;
+        }
+      }
+
+      .horizontalLine {
+        background-color: lightgray;
+        width: 400px;
+        height: 3px;
+        margin: 12px;
+      }
+      .welcomeText {
+        color: gray;
+        font-weight: 600;
+        margin-bottom: 20px;
+      }
+
+      .inputArea {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 16px;
+        width: 400px;
+        input {
+          outline: none;
+          border: 1px solid lightgray;
+          border-radius: 4px;
+          padding: 14px;
+          color: gray;
+          &:focus {
+            -webkit-box-shadow: 0px 0px 5px rgba(56, 169, 240, 0.75);
+            -moz-box-shadow: 0px 0px 5px rgba(56, 169, 240, 0.75);
+            box-shadow: 0px 0px 5px rgba(56, 169, 240, 0.75);
+          }
+          &::placeholder {
+            color: gray;
+            font-weight: 500;
+            letter-spacing: 0.3px;
+          }
+          &:-ms-input-placeholder {
+            color: gray;
+          }
+          &::-ms-input-placeholder {
+            color: gray;
+          }
+        }
+      }
+
+      .submit {
+        outline: none;
+        border: none;
+        cursor: pointer;
+        background-color: #84c340;
+        padding: 14px;
+        border-radius: 4px;
+        transition: 0.2s all ease-in-out;
+        margin-top: 10px;
+        font-weight: 600;
+        width: 400px;
+        color: #fff;
+        &:hover {
+          background-color: #9ccf67;
+        }
+      }
+
+      .errorMessage {
+        color: red;
+        font-family: "Lucida Grande";
+        font-size: 13px;
+        text-align: center;
+        margin: 20px 20px;
+      }
+    }
+  }
+}

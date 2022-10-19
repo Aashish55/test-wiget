@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import './styles.css'
 import sharpspringLogo from '../../assets/icons/sharpspring.svg'
 
 const IntegrateWithSharpspring = () => {

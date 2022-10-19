@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import './IntegrateWithCampminder.css'
 import campminderLogo from '../../assets/icons/campminderIcon.png'
 import campminderAdminLogin from '../../assets/icons/campminderAdminLogin.png'
 

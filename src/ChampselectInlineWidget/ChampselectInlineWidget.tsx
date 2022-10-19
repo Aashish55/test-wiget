@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './ChampselectInlineWidget.css';
+import './ChampselectInlineWidget.scss';
 import { apps } from '../data/allApps'
 import campminderIcon from '../assets/icons/campminderIcon.svg'
 import slackIcon from '../assets/icons/slackIcon.svg'

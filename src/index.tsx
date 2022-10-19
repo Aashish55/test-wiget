@@ -1,21 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './styles/root.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-// import Widget from './ChampselectInlineWidget/ChampselectInlineWidget';
 
-// const champselectInlineWidget = document.getElementById('champselect-inline-widget')
 const root = document.getElementById('root')
-
-// if (champselectInlineWidget) {
-//   ReactDOM.render(
-//     <React.StrictMode>
-//       <Widget appName={champselectInlineWidget?.getAttribute('data-slug') || ''} />
-//     </React.StrictMode>,
-//     champselectInlineWidget
-//   );
-// }
 
 ReactDOM.render(
   <React.StrictMode>
