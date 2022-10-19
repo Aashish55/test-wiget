@@ -1,7 +1,6 @@
-import { BrowserRouter as Router } from 'react-router-dom';
-import { Route, Routes } from 'react-router'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 // Components
-import Widget from './ChampselectInlineWidget/ChampselectInlineWidget';
+import EmptyWidget from './Component/EmptyWidget/EmptyWidget';
 import IntegrateWithCampminder from './Component/IntegrateWithCampminder/IntegrateWithCampminder';
 
 const App = () => {
@@ -10,7 +9,7 @@ const App = () => {
     <Router>
       <Routes>
         <Route path='/campminder' element={<IntegrateWithCampminder />} />
-        <Route path='/' element={<Widget appName='' />} />
+        <Route path='/' element={<EmptyWidget appName='' />} />
       </Routes>
     </Router>
   );
