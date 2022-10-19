@@ -31,13 +31,20 @@ const Widget: React.FC<AppProps> = ({ appName }) => {
     switch (appType) {
       case 'campminder':
         return integrateWithCampminder()
+      case 'sharpspring':
+        return integrateWithSharpspring()
       default:
         break;
     }
+
   }
 
   const integrateWithCampminder = () => {
     window.open(`${config?.appUrl}/campminder`, '', 'width=900, height=700, top=100, left=100')
+  }
+
+  const integrateWithSharpspring = () => {
+    window.open(`${config?.appUrl}/sharpspring`, '', 'width=900, height=700, top=100, left=100')
   }
 
   return (

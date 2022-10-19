@@ -13,8 +13,6 @@ import gmailIcon from '../../assets/icons/gmailIcon.svg'
 import salesforceIcon from '../../assets/icons/salesforceIcon.svg'
 import shopifyIcon from '../../assets/icons/shopifyIcon.svg'
 
-import { config } from '../../config'
-
 export interface AppProps {
   appName: string
 }
@@ -26,19 +24,6 @@ const allApps = apps.map((r, i) => {
 
 const EmptyWidget: React.FC<AppProps> = ({ appName }) => {
   const [app,] = useState(allApps.find(a => a.slug === appName))
-
-  const integrateButton = (appType: string) => {
-    switch (appType) {
-      case 'campminder':
-        return integrateWithCampminder()
-      default:
-        break;
-    }
-  }
-
-  const integrateWithCampminder = () => {
-    window.open(`${config?.appUrl}/campminder`, '', 'width=900, height=700, top=100, left=100')
-  }
 
   return (
     <div className='widget'>
@@ -53,7 +38,7 @@ const EmptyWidget: React.FC<AppProps> = ({ appName }) => {
           </div>
         </div>
         <div className='right'>
-          {app && <button className='integrateButton' type='submit' onClick={() => integrateButton(appName)}>Integrate with {app?.name}</button>}
+          {app && <button className='integrateButton' type='submit'>Integrate with {app?.name}</button>}
         </div>
       </div>
     </div>
